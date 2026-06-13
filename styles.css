@@ -71,10 +71,12 @@ a {
   align-items: center;
   justify-content: center;
   gap: 1rem;
-  width: min(1120px, calc(100% - 2rem));
-  margin: 0 auto;
-  padding: 1rem 0;
+  width: 100%;
+  margin: 0;
+  padding: 1rem;
+  background: rgba(7, 11, 18, 0.22);
   backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
 }
 
 .nav-links {
