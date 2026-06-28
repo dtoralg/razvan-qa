@@ -3,120 +3,334 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Razvan Criste | QA Engineer &amp; Test Automation</title>
     <meta
       name="description"
-      content="Razvan Criste, QA Engineer and QA Automation specialist portfolio resume."
+      content="Razvan Criste — QA Engineer with 6 years testing web, iPad and iPhone software. Selenium &amp; SpecFlow automation, API and network testing, ISTQB certified. Open to new opportunities."
     />
-    <title>Razvan Criste | QA Engineer</title>
+    <meta name="author" content="Razvan Criste" />
+    <meta name="theme-color" content="#05060a" />
+    <link rel="canonical" href="https://razvancriste.com/" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Razvan Criste | QA Engineer &amp; Test Automation" />
+    <meta
+      property="og:description"
+      content="6 years testing web and mobile software. Selenium &amp; SpecFlow automation, API and network testing, ISTQB certified. Open to new opportunities."
+    />
+    <meta property="og:url" content="https://razvancriste.com/" />
+    <meta property="og:image" content="https://razvancriste.com/assets/razvan-profile.jpg" />
+    <meta property="og:image:alt" content="Razvan Criste, QA Engineer" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Razvan Criste | QA Engineer &amp; Test Automation" />
+    <meta
+      name="twitter:description"
+      content="6 years testing web and mobile software. Automation, API testing, ISTQB certified. Open to new opportunities."
+    />
+    <meta name="twitter:image" content="https://razvancriste.com/assets/razvan-profile.jpg" />
+
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="assets/favicon.svg" />
+    <link rel="manifest" href="site.webmanifest" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Razvan Criste",
+        "jobTitle": "QA Engineer",
+        "url": "https://razvancriste.com/",
+        "image": "https://razvancriste.com/assets/razvan-profile.jpg",
+        "email": "mailto:raz.criste@gmail.com",
+        "sameAs": ["https://www.linkedin.com/in/razvan-criste"],
+        "knowsLanguage": ["English", "Spanish", "Romanian"],
+        "hasCredential": {
+          "@type": "EducationalOccupationalCredential",
+          "credentialCategory": "certification",
+          "name": "ISTQB Certified Tester Foundation Level"
+        },
+        "knowsAbout": [
+          "Software Quality Assurance",
+          "Test Automation",
+          "Selenium",
+          "API Testing",
+          "Manual Testing",
+          "Mobile Testing"
+        ]
+      }
+    </script>
   </head>
   <body>
-    <div class="cursor-light" aria-hidden="true"></div>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <!-- Preloader / boot sequence -->
+    <div class="preloader" id="preloader" aria-hidden="true">
+      <div class="preloader-inner">
+        <div class="preloader-mark">RC</div>
+        <pre class="preloader-log" id="preloaderLog"></pre>
+        <div class="preloader-bar"><span id="preloaderBar"></span></div>
+      </div>
+    </div>
+
+    <!-- Background layers -->
+    <div class="bg-aurora" aria-hidden="true">
+      <span class="blob blob-1"></span>
+      <span class="blob blob-2"></span>
+      <span class="blob blob-3"></span>
+    </div>
+    <div class="bg-dotgrid" aria-hidden="true"></div>
+    <div class="bg-spotlight" aria-hidden="true"></div>
+    <div class="bg-grain" aria-hidden="true"></div>
+
+    <!-- Custom cursor -->
+    <div class="cursor" id="cursor" aria-hidden="true">
+      <span class="cursor-dot"></span>
+      <span class="cursor-ring"></span>
+    </div>
+
+    <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
     <header class="site-header">
+      <a class="brand" href="#top" aria-label="Razvan Criste — home">
+        <span class="brand-mark">RC</span>
+        <span class="brand-name">Razvan Criste</span>
+      </a>
       <nav class="nav-links" aria-label="Primary navigation">
-        <a href="#top">Profile</a>
+        <a href="#top" class="active">Home</a>
+        <a href="#expertise">Expertise</a>
         <a href="#experience">Experience</a>
-        <a href="#automation">Tech</a>
+        <a href="#stack">Stack</a>
         <a href="#contact">Contact</a>
       </nav>
+      <a class="nav-cta magnetic" href="#contact"><span>Let's talk</span></a>
     </header>
 
-    <main id="top">
-      <section class="hero section-reveal">
-          <div class="hero-copy">
-          <div class="hero-name">Razvan Criste</div>
-          <p class="role-line">QA Engineer</p>
-          <h1>Testing software where quality, speed, and clarity meet</h1>
-          <p class="hero-text">
-            I am a dedicated QA professional with 6 years in the testing
-            industry, focused on reliable releases, clear test strategy, and
-            continuous workflow improvement across web and mobile platforms.
+    <main id="main">
+      <section class="hero" id="top">
+        <div class="hero-copy">
+          <p class="availability reveal" data-reveal>
+            <span class="availability-dot" aria-hidden="true"></span>
+            Open to new opportunities
           </p>
-          <div class="hero-actions" aria-label="Primary actions">
-            <a class="button button-primary" href="#experience">View Experience</a>
-            <a class="button button-secondary" href="#contact">Contact Me</a>
+          <p class="hero-role reveal" data-reveal>QA Engineer — Test Automation</p>
+          <h1 class="hero-title" data-reveal>
+            <span class="line">I find the bugs</span>
+            <span class="line"><em>before your users do.</em></span>
+          </h1>
+          <p class="hero-text reveal" data-reveal>
+            QA Engineer with 6 years testing web, iPad and iPhone software. I
+            turn unclear product risk into practical test coverage, reliable
+            automation, and feedback engineering teams can act on.
+          </p>
+          <div class="hero-actions reveal" data-reveal>
+            <a class="btn btn-primary magnetic" href="#contact"><span>Get in touch</span></a>
+            <a class="btn btn-ghost magnetic" href="assets/razvan-criste-cv.pdf" download>
+              <span>Download CV</span>
+            </a>
+          </div>
+          <ul class="hero-chips reveal" data-reveal aria-label="Quick facts">
+            <li>ISTQB Certified</li>
+            <li>Selenium &amp; SpecFlow</li>
+            <li>Web &middot; iOS</li>
+            <li>EN &middot; ES &middot; RO</li>
+          </ul>
+        </div>
+
+        <div class="hero-visual" data-reveal>
+          <div class="hero-portrait" data-parallax="0.04">
+            <img
+              src="assets/razvan-profile.jpg"
+              alt="Razvan Criste, QA Engineer"
+              width="640"
+              height="800"
+            />
+            <div class="portrait-glow" aria-hidden="true"></div>
+          </div>
+
+          <div class="float-card float-terminal" data-parallax="0.12" aria-hidden="true">
+            <div class="term-bar">
+              <span></span><span></span><span></span>
+              <em>regression.spec</em>
+            </div>
+            <pre class="term-body"><code id="termCode"></code></pre>
+          </div>
+
+          <div class="float-card float-badge" data-parallax="0.18" aria-hidden="true">
+            <svg class="ring" viewBox="0 0 64 64">
+              <circle class="ring-track" cx="32" cy="32" r="27" />
+              <circle class="ring-progress" cx="32" cy="32" r="27" />
+            </svg>
+            <div class="ring-check">
+              <svg viewBox="0 0 24 24"><path d="m5 12 4 4 10-10" /></svg>
+            </div>
+            <div class="badge-meta">
+              <strong>Green build</strong>
+              <span>all checks passed</span>
+            </div>
           </div>
         </div>
+      </section>
 
-        <div class="hero-visual" aria-label="Portrait of Razvan Criste">
-          <img src="assets/razvan-profile.jpg" alt="Razvan Criste portrait" />
+      <!-- Tools marquee -->
+      <section class="marquee-section" aria-label="Tools and technologies">
+        <div class="marquee" aria-hidden="true">
+          <div class="marquee-track">
+            <span>Selenium</span><span>SpecFlow</span><span>C#</span><span>Java</span>
+            <span>Postman</span><span>API Testing</span><span>Proxyman</span>
+            <span>TestRail</span><span>Azure DevOps</span><span>GitHub</span>
+            <span>Agile</span><span>JavaScript</span>
+            <span>Selenium</span><span>SpecFlow</span><span>C#</span><span>Java</span>
+            <span>Postman</span><span>API Testing</span><span>Proxyman</span>
+            <span>TestRail</span><span>Azure DevOps</span><span>GitHub</span>
+            <span>Agile</span><span>JavaScript</span>
+          </div>
         </div>
       </section>
 
-      <section id="profile" class="profile-band section-reveal">
-        <div>
-          <h2>Practical QA for reliable releases</h2>
+      <!-- Stats -->
+      <section class="stats" aria-label="Career highlights">
+        <article class="stat" data-reveal>
+          <strong class="count" data-to="6" data-suffix="">0</strong>
+          <span>years in QA</span>
+        </article>
+        <article class="stat" data-reveal>
+          <strong class="count" data-to="3" data-suffix="">0</strong>
+          <span>platforms: web, iPad, iPhone</span>
+        </article>
+        <article class="stat" data-reveal>
+          <strong class="count" data-to="4" data-suffix="">0</strong>
+          <span>testers led &amp; mentored</span>
+        </article>
+        <article class="stat" data-reveal>
+          <strong>ISTQB</strong>
+          <span>Foundation Level certified</span>
+        </article>
+      </section>
+
+      <!-- Expertise bento -->
+      <section class="section expertise" id="expertise">
+        <header class="section-head" data-reveal>
+          <span class="eyebrow">What I do</span>
+          <h2>Quality, engineered end to end</h2>
           <p>
-            My work combines structured manual testing, test case design,
-            cross-functional communication, API validation, and automation with
-            Selenium. I enjoy turning unclear product risk into practical test
-            coverage and useful feedback for engineering teams.
+            From the first test plan to the final green build — here is how I
+            help teams ship software they can trust.
           </p>
-        </div>
-        <div class="metric-grid" aria-label="Career highlights">
-          <article>
-            <strong>6</strong>
-            <span>years in QA</span>
+        </header>
+
+        <div class="bento">
+          <article class="bento-card spotlight tilt span-2" data-reveal>
+            <div class="bento-icon">
+              <svg viewBox="0 0 24 24"><path d="M8 6 3 12l5 6" /><path d="m16 6 5 6-5 6" /></svg>
+            </div>
+            <h3>Test automation</h3>
+            <p>
+              Maintainable Selenium automation with C# / SpecFlow and Java,
+              written so other engineers can read, extend and trust the suite —
+              not just run it.
+            </p>
+            <div class="code-strip" aria-hidden="true">
+              <span>[Test] CheckoutPaysWithSavedCard()</span>
+              <span>driver.FindElement(Pay).Click();</span>
+              <span class="ok">Assert.Equal(200, response.Status);</span>
+            </div>
           </article>
-          <article>
-            <strong>3</strong>
-            <span>languages</span>
+
+          <article class="bento-card spotlight tilt" data-reveal>
+            <div class="bento-icon">
+              <svg viewBox="0 0 24 24"><path d="m5 12 4 4 10-10" /></svg>
+            </div>
+            <h3>Manual &amp; exploratory</h3>
+            <p>Structured test plans and exploratory sessions that surface the risks scripts miss.</p>
           </article>
-          <article>
-            <strong>ISTQB</strong>
-            <span>Foundation Level</span>
+
+          <article class="bento-card spotlight tilt" data-reveal>
+            <div class="bento-icon">
+              <svg viewBox="0 0 24 24"><path d="M4 7h16" /><path d="M4 12h16" /><path d="M4 17h10" /></svg>
+            </div>
+            <h3>API &amp; network</h3>
+            <p>Endpoint validation with Postman and traffic debugging with Proxyman.</p>
+          </article>
+
+          <article class="bento-card spotlight tilt" data-reveal>
+            <div class="bento-icon">
+              <svg viewBox="0 0 24 24"><rect x="3" y="4" width="8" height="6" rx="1" /><rect x="13" y="4" width="8" height="6" rx="1" /><rect x="8" y="14" width="8" height="6" rx="1" /></svg>
+            </div>
+            <h3>Cross-platform</h3>
+            <p>Web, iPad and iPhone — one product, tested consistently everywhere.</p>
+          </article>
+
+          <article class="bento-card spotlight tilt span-2" data-reveal>
+            <div class="bento-icon">
+              <svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="3.2" /><path d="M5 20c0-3.5 3-6 7-6s7 2.5 7 6" /></svg>
+            </div>
+            <h3>QA leadership &amp; Agile workflow</h3>
+            <p>
+              Led and mentored a team of testers across multiplatform projects,
+              tightening the loop between QA and development inside Agile and
+              Azure DevOps workflows.
+            </p>
           </article>
         </div>
       </section>
 
-      <section id="experience" class="timeline-section section-reveal">
-        <div class="section-heading section-heading-solo">
-          <h2>Experience</h2>
-        </div>
+      <!-- Experience timeline -->
+      <section class="section experience" id="experience">
+        <header class="section-head" data-reveal>
+          <span class="eyebrow">Career</span>
+          <h2>Six years of finding what matters</h2>
+        </header>
 
-        <div class="timeline">
-          <article class="timeline-item">
-            <div class="timeline-date">2023 - Present</div>
-            <div class="timeline-content">
+        <div class="timeline" id="timeline">
+          <span class="timeline-line" aria-hidden="true"><i id="timelineFill"></i></span>
+
+          <article class="tl-item" data-reveal>
+            <div class="tl-dot" aria-hidden="true"></div>
+            <div class="tl-date">2023 — Present</div>
+            <div class="tl-card spotlight">
               <h3>QA Engineer</h3>
-              <p class="company">Red To Blue - Cluj-Napoca, Romania</p>
+              <p class="tl-company">Red To Blue · Cluj-Napoca, Romania</p>
               <ul>
-                <li>Test retail/e-commerce software and POS systems across web, iPad, and iPhone platforms.</li>
-                <li>Develop and execute automated test scripts using Selenium with C#.</li>
-                <li>Perform API testing, endpoint validation, and troubleshooting.</li>
-                <li>Analyze and debug network calls and traffic using Proxyman.</li>
-                <li>Create, maintain, and optimize test cases and test suites.</li>
+                <li>Test retail / e-commerce software and POS systems across web, iPad and iPhone.</li>
+                <li>Develop and run automated test scripts using Selenium with C#.</li>
+                <li>Perform API testing, endpoint validation and troubleshooting.</li>
+                <li>Analyse and debug network calls and traffic with Proxyman.</li>
+                <li>Create, maintain and optimise test cases and test suites.</li>
               </ul>
             </div>
           </article>
 
-          <article class="timeline-item">
-            <div class="timeline-date">2022 - 2023</div>
-            <div class="timeline-content">
+          <article class="tl-item" data-reveal>
+            <div class="tl-dot" aria-hidden="true"></div>
+            <div class="tl-date">2022 — 2023</div>
+            <div class="tl-card spotlight">
               <h3>QA Engineer</h3>
-              <p class="company">SWARE - Boston, USA (Remote)</p>
+              <p class="tl-company">SWARE · Boston, USA (Remote)</p>
               <ul>
                 <li>Planned and managed product inspections and testing for quality compliance.</li>
-                <li>Created detailed, comprehensive, and well-structured test plans and cases.</li>
-                <li>Created automated tests using Selenium with Java.</li>
+                <li>Created detailed, well-structured test plans and test cases.</li>
+                <li>Built automated tests using Selenium with Java.</li>
               </ul>
             </div>
           </article>
 
-          <article class="timeline-item">
-            <div class="timeline-date">2020 - 2022</div>
-            <div class="timeline-content">
+          <article class="tl-item" data-reveal>
+            <div class="tl-dot" aria-hidden="true"></div>
+            <div class="tl-date">2020 — 2022</div>
+            <div class="tl-card spotlight">
               <h3>QA Analyst / Lead Tester</h3>
-              <p class="company">Quantic Lab - Cluj-Napoca, Romania</p>
+              <p class="tl-company">Quantic Lab · Cluj-Napoca, Romania</p>
               <ul>
                 <li>Performed manual testing on video game projects across multiple platforms.</li>
-                <li>Directed and mentored a dedicated QA team of 4 testers, coordinating daily task progress across multiplatform projects.</li>
+                <li>Directed and mentored a QA team of 4 testers, coordinating daily progress on multiplatform projects.</li>
                 <li>Improved communication with development teams to streamline processes.</li>
                 <li>Compiled detailed reports on task progress and identified issues.</li>
               </ul>
@@ -125,138 +339,101 @@
         </div>
       </section>
 
-      <section id="automation" class="skills-section section-reveal">
-        <div class="section-heading">
-          <span>Tech Stack</span>
-        </div>
-        <div class="skill-layout">
-          <div>
-            <div class="stack-groups" aria-label="Technical skills by category">
-              <div class="stack-group">
-                <h3>Testing</h3>
-                <div class="stack-cloud">
-                  <span>Selenium</span>
-                  <span>SpecFlow</span>
-                  <span>API Testing</span>
-                  <span>Postman</span>
-                  <span>TestRail</span>
-                  <span>Proxyman</span>
-                </div>
-              </div>
-              <div class="stack-group">
-                <h3>Programming & Frontend</h3>
-                <div class="stack-cloud">
-                  <span>C#</span>
-                  <span>Java</span>
-                  <span>HTML</span>
-                  <span>CSS</span>
-                  <span>JavaScript</span>
-                </div>
-              </div>
-              <div class="stack-group">
-                <h3>Tools & Workflow</h3>
-                <div class="stack-cloud">
-                  <span>GitHub</span>
-                  <span>Azure DevOps</span>
-                  <span>Agile</span>
-                </div>
-              </div>
+      <!-- Tech stack -->
+      <section class="section stack" id="stack">
+        <header class="section-head" data-reveal>
+          <span class="eyebrow">Tech stack</span>
+          <h2>The tools I reach for</h2>
+        </header>
+        <div class="stack-grid">
+          <div class="stack-col" data-reveal>
+            <h3>Testing</h3>
+            <div class="tags">
+              <span>Selenium</span><span>SpecFlow</span><span>API Testing</span>
+              <span>Postman</span><span>TestRail</span><span>Proxyman</span>
             </div>
           </div>
-          <div class="platform-showcase" aria-label="Web, iPhone and iPad testing coverage">
-            <div class="browser-window">
-              <div class="browser-bar">
-                <span></span>
-                <span></span>
-                <span></span>
-              </div>
-              <div class="browser-content">
-                <strong>Web App</strong>
-                <div class="qa-screen" aria-hidden="true">
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                </div>
-              </div>
+          <div class="stack-col" data-reveal>
+            <h3>Programming</h3>
+            <div class="tags">
+              <span>C#</span><span>Java</span><span>JavaScript</span>
+              <span>HTML</span><span>CSS</span>
             </div>
-            <div class="device ipad">
-              <span></span>
-              <div>
-                <strong>iPad</strong>
-              </div>
-            </div>
-            <div class="device iphone">
-              <span></span>
-              <div>
-                <strong>iPhone</strong>
-              </div>
+          </div>
+          <div class="stack-col" data-reveal>
+            <h3>Tools &amp; Workflow</h3>
+            <div class="tags">
+              <span>GitHub</span><span>Azure DevOps</span><span>Agile</span>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="education-section section-reveal">
-        <div class="education-card">
-          <span>Certification</span>
-          <h2>ISTQB Certified Tester Foundation Level</h2>
-          <p>Credential ID 22-CTFL-216530-14</p>
+      <!-- Credentials -->
+      <section class="section credentials">
+        <div class="cred-card spotlight" data-reveal>
+          <span class="eyebrow">Certification</span>
+          <h3>ISTQB Certified Tester</h3>
+          <p>Foundation Level · Credential ID 22-CTFL-216530-14</p>
         </div>
-        <div class="education-card">
-          <span>Education</span>
-          <h2>Higher Technician Diploma</h2>
+        <div class="cred-card spotlight" data-reveal>
+          <span class="eyebrow">Education</span>
+          <h3>Higher Technician Diploma</h3>
+          <p>Web Application Development · IES Juan Bosco, Alcázar de San Juan, Spain</p>
+        </div>
+        <div class="cred-card spotlight" data-reveal>
+          <span class="eyebrow">Languages</span>
+          <ul class="langs">
+            <li>
+              <div class="lang-top"><strong>English</strong><span>C1</span></div>
+              <div class="lang-bar"><i style="--level: 90%"></i></div>
+            </li>
+            <li>
+              <div class="lang-top"><strong>Spanish</strong><span>Native</span></div>
+              <div class="lang-bar"><i style="--level: 100%"></i></div>
+            </li>
+            <li>
+              <div class="lang-top"><strong>Romanian</strong><span>Native</span></div>
+              <div class="lang-bar"><i style="--level: 100%"></i></div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section class="section contact" id="contact">
+        <div class="contact-inner" data-reveal>
+          <span class="eyebrow">Get in touch</span>
+          <h2>Let's build quality together</h2>
           <p>
-            Development of Web Applications, IES Juan Bosco - Alcazar de San Juan,
-            Spain
+            Looking for a QA Engineer who cares about reliable releases and
+            clear communication? I'm open to new opportunities — let's talk.
           </p>
-        </div>
-        <div class="education-card">
-          <span>Languages</span>
-          <div class="language-list" aria-label="Language proficiency">
-            <div>
-              <strong>English</strong>
-              <span>C1</span>
-            </div>
-            <div>
-              <strong>Spanish</strong>
-              <span>Native</span>
-            </div>
-            <div>
-              <strong>Romanian</strong>
-              <span>Native</span>
-            </div>
+          <div class="contact-actions">
+            <button class="btn btn-primary magnetic" id="copyEmail" type="button" data-email="raz.criste@gmail.com">
+              <span id="copyEmailLabel">raz.criste@gmail.com</span>
+            </button>
+            <a class="btn btn-ghost magnetic" href="mailto:raz.criste@gmail.com"><span>Send email</span></a>
+            <a
+              class="btn btn-ghost magnetic"
+              href="https://www.linkedin.com/in/razvan-criste"
+              target="_blank"
+              rel="noopener"
+            >
+              <span>LinkedIn</span>
+            </a>
           </div>
-        </div>
-      </section>
-
-      <section id="contact" class="contact-section section-reveal">
-        <div>
-          <h2>Let's connect</h2>
-        </div>
-        <div class="contact-actions">
-          <a class="contact-card" href="mailto:raz.criste@gmail.com" aria-label="Email Razvan">
-            <svg viewBox="0 0 24 24" aria-hidden="true">
-              <path d="M4 6h16v12H4z" />
-              <path d="m4 7 8 6 8-6" />
-            </svg>
-            <span>Email</span>
-            <strong>raz.criste@gmail.com</strong>
-          </a>
-          <a
-            class="contact-card"
-            href="https://www.linkedin.com/in/razvan-criste"
-            aria-label="Open Razvan's LinkedIn profile"
-          >
-            <svg viewBox="0 0 24 24" aria-hidden="true">
-              <path d="M4 9h4v11H4z" />
-              <path d="M6 4.5a2 2 0 1 0 0 4 2 2 0 0 0 0-4Z" />
-              <path d="M11 9h3.8v1.5c.7-1 1.8-1.7 3.3-1.7 2.5 0 4 1.7 4 4.9V20h-4v-5.6c0-1.4-.5-2.3-1.7-2.3-1 0-1.5.6-1.8 1.2-.1.2-.1.6-.1.9V20H11z" />
-            </svg>
-            <span>LinkedIn</span>
-            <strong>razvan-criste</strong>
-          </a>
         </div>
       </section>
     </main>
+
+    <footer class="site-footer">
+      <a class="brand" href="#top"><span class="brand-mark">RC</span></a>
+      <p>&copy; <span id="year">2026</span> Razvan Criste · QA Engineer</p>
+      <a class="to-top magnetic" href="#top" aria-label="Back to top">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 14 6-6 6 6" /></svg>
+      </a>
+    </footer>
 
     <script src="script.js"></script>
   </body>

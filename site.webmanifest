@@ -1,0 +1,16 @@
+{
+  "name": "Razvan Criste — QA Engineer",
+  "short_name": "Razvan Criste",
+  "description": "QA Engineer and Test Automation specialist portfolio.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#070b12",
+  "theme_color": "#070b12",
+  "icons": [
+    {
+      "src": "assets/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
